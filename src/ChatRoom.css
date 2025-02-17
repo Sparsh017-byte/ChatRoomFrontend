@@ -6,7 +6,7 @@
 
 }
 .TypeMessage{
-    position: fixed;
+    position: relative;
     bottom: 10px; 
     left: 10px;   
     
