@@ -72,7 +72,13 @@ const ChatRoom = () => {
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                     />
-                    <button onClick={sendMessage}>Send</button>
+                    <button onClick={() => {
+                        if (user.trim() === '' || message.trim() === '') {
+                            alert("Message or User cannot be empty");
+                        } else {
+                            sendMessage();
+                        }
+                    }}>Send</button>
                 </div>
 
             </div>
