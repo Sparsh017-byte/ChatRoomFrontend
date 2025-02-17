@@ -6,9 +6,9 @@
 
 }
 .TypeMessage{
-    position: sticky;
-    top: 100vh;
-    left: 0vw;
+    position: fixed;
+    bottom: 10px; 
+    left: 10px;   
     
 }
 h2{
