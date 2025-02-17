@@ -9,7 +9,7 @@ const ChatRoom = () => {
 
     const fetchMessages = async () => {
         try {
-            const response = await fetch('http://192.168.86.81:5000/messages');
+            const response = await fetch('https://chatroombackend-ej7g.onrender.com/messages');
             const data = await response.json();
             setMessages(data);
         } catch (error) {
@@ -19,7 +19,7 @@ const ChatRoom = () => {
 
     const sendMessage = async () => {
         try {
-            await fetch('http://192.168.86.81:5000/messages', {
+            await fetch('https://chatroombackend-ej7g.onrender.com/messages', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
